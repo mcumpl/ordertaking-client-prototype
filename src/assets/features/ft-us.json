@@ -1,0 +1,12 @@
+{
+  "0001": {
+    "feature1": false,
+    "feature2": false,
+    "feature3": true
+  },
+  "0002": {
+    "feature1": false,
+    "feature2": true,
+    "feature3": true
+  }
+}

@@ -1,0 +1,23 @@
+
+.action-footer {
+  position: fixed;
+  z-index: 2;
+
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px 38px 15px 15px;
+  white-space: nowrap;
+  text-align: right;
+  overflow-x: auto;
+
+  background: #fcfefe;
+  border-top: #d1d2d2;
+  box-shadow: 0 1px 3px 3px #d1d2d2;
+}
+
+::ng-deep .action-footer button.button {
+  margin-bottom: 0 !important;
+  margin-left: 7px;
+  margin-right: 0;
+}

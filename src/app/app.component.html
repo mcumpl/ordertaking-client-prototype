@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <h1>{{ title }}</h1>
+
+  <cmx-steps name="test" (onCompleted)="handleFinish()" (onExit)="handleExit()">
+    <product-selection #cmxStep></product-selection>
+    <delivery-selection #cmxStep></delivery-selection>
+    <location-selection #cmxStep></location-selection>
+  </cmx-steps>
+
+  <cemex-action-footer>
+    <div class="steps-buttons-container">
+      <button class="button mb-2 button-ghost" cmxExitStep="test">Exit</button>
+      <button class="button mb-2 button-ghost" cmxPreviousStep="test">Previous</button>
+      <button class="button" cmxNextStep="test">Next</button>
+      <button class="button bright-green" cmxLastStep="test">Finish</button>
+    </div>
+  </cemex-action-footer>
+
+</div>
