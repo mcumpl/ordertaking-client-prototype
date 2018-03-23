@@ -2,9 +2,9 @@
   <h1>{{ title }}</h1>
 
   <cmx-steps name="test" (onCompleted)="handleFinish()" (onExit)="handleExit()">
-    <product-selection #cmxStep></product-selection>
-    <delivery-selection #cmxStep></delivery-selection>
-    <location-selection #cmxStep></location-selection>
+    <product-selection headerName="Product Line" #cmxStep></product-selection>
+    <delivery-selection headerName="Delivery Type" #cmxStep></delivery-selection>
+    <location-selection headerName="Location" #cmxStep></location-selection>
   </cmx-steps>
 
   <cemex-action-footer>
