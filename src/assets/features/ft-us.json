@@ -1,23 +1,8 @@
 {
-  "productLineSelection": {},
-  "deliveryTypeSelection": {
-    "001": {},
-    "002": {}
-  },
-  "locationSelection": {
-    "001": {},
-    "002": {}
-  },
-  "productSpecification": {
-    "001": {},
-    "002": {}
-  },
-  "review": {
-    "001": {},
-    "002": {}
-  },
-  "checkout": {
-    "001": {},
-    "002": {}
+  "productLineSelection": {
+    "availableProductLines": [
+      "ReadyMix",
+      "Cement"
+    ]
   }
 }

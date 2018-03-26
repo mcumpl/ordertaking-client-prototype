@@ -10,9 +10,9 @@
   </div>
 
   <cmx-steps name="test" (onCompleted)="handleFinish()" (onExit)="handleExit()">
-    <product-selection headerName="Product Line" #cmxStep></product-selection>
-    <delivery-selection headerName="Delivery Type" #cmxStep></delivery-selection>
-    <location-selection headerName="Location" #cmxStep></location-selection>
+    <product-selection [country]="selectedCountry" headerName="Product Line" #cmxStep></product-selection>
+    <delivery-selection [country]="selectedCountry" headerName="Delivery Type" #cmxStep></delivery-selection>
+    <location-selection [country]="selectedCountry" headerName="Location" #cmxStep></location-selection>
   </cmx-steps>
 
   <config-viewer [country]="selectedCountry"></config-viewer>

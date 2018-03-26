@@ -1,13 +1,13 @@
 import { Component, Input, ViewChild, ComponentFactoryResolver, ViewContainerRef } from '@angular/core';
 
-import { Feature1Component } from './feature1.component';
-import { Feature2Component } from './feature2.component';
-import { Feature3Component } from './feature3.component';
+import { ReadyMixComponent } from './readymix.component';
+import { AggregatesComponent } from './aggregates.component';
+import { CementComponent } from './cement.component';
 
 const components = {
-  feature1: Feature1Component,
-  feature2: Feature2Component,
-  feature3: Feature3Component
+  "ReadyMix": ReadyMixComponent,
+  "Aggregates": AggregatesComponent,
+  "Cement": CementComponent
 };
 
 @Component({

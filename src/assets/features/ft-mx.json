@@ -1,12 +1,9 @@
 {
-  "0001": {
-    "feature1": true,
-    "feature2": true,
-    "feature3": false
-  },
-  "0002": {
-    "feature1": true,
-    "feature2": false,
-    "feature3": false
+  "productLineSelection": {
+    "availableProductLines": [
+      "ReadyMix",
+      "Aggregates",
+      "Cement"
+    ]
   }
 }

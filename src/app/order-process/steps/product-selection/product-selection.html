@@ -1,8 +1,3 @@
-<div>
-  <h1>Location Selection Step</h1>
-
-  <dynamic-component content="feature3"></dynamic-component>
-  <dynamic-component content="feature2"></dynamic-component>
-  <dynamic-component content="feature1"></dynamic-component>
-
+<div *ngFor="let field of fields">
+  <dynamic-component [content]="field"></dynamic-component>
 </div>
