@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CountryService } from './country/services/country.service';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ordertaking Process Prototype';
+  title = 'Order Wizard Prototype';
+  selectedCountry = 'US';
+
+  constructor(
+    private countryService: CountryService,
+  ) { }
+
+  handleChangeCountry(event) {
+    this.selectedCountry = event.target.value;
+    this.countryService.country = this.selectedCountry;
+  }
 
   handleFinish() {
     console.log('All steps finished');

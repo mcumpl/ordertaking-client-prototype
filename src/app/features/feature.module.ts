@@ -14,6 +14,9 @@ import { Feature3Component } from './components/feature3.component';
   imports: [CommonModule],
   declarations: [FeatureDirective, DynamicComponent, Feature1Component, Feature2Component, Feature3Component],
   exports: [FeatureDirective, DynamicComponent, Feature1Component, Feature2Component, Feature3Component],
+  entryComponents: [
+    Feature1Component, Feature2Component, Feature3Component
+  ]
 })
 export class FeatureModule {
   static forRoot(): ModuleWithProviders {

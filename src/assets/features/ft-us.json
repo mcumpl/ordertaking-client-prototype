@@ -1,12 +1,23 @@
 {
-  "0001": {
-    "feature1": false,
-    "feature2": false,
-    "feature3": true
+  "productLineSelection": {},
+  "deliveryTypeSelection": {
+    "001": {},
+    "002": {}
   },
-  "0002": {
-    "feature1": false,
-    "feature2": true,
-    "feature3": true
+  "locationSelection": {
+    "001": {},
+    "002": {}
+  },
+  "productSpecification": {
+    "001": {},
+    "002": {}
+  },
+  "review": {
+    "001": {},
+    "002": {}
+  },
+  "checkout": {
+    "001": {},
+    "002": {}
   }
 }

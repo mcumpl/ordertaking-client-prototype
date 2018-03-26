@@ -1,18 +1,28 @@
 <div style="text-align:center">
   <h1>{{ title }}</h1>
 
+  <div>
+    <label>Selected Country</label>
+    <select (change)="handleChangeCountry($event)">
+      <option value="US" selected>US</option>
+      <option value="MX">MX</option>
+    </select>
+  </div>
+
   <cmx-steps name="test" (onCompleted)="handleFinish()" (onExit)="handleExit()">
     <product-selection headerName="Product Line" #cmxStep></product-selection>
     <delivery-selection headerName="Delivery Type" #cmxStep></delivery-selection>
     <location-selection headerName="Location" #cmxStep></location-selection>
   </cmx-steps>
 
+  <config-viewer [country]="selectedCountry"></config-viewer>
+
   <cemex-action-footer>
     <div class="steps-buttons-container">
-      <button class="button mb-2 button-ghost" cmxExitStep="test">Exit</button>
-      <button class="button mb-2 button-ghost" cmxPreviousStep="test">Previous</button>
-      <button class="button" cmxNextStep="test">Next</button>
-      <button class="button bright-green" cmxLastStep="test">Finish</button>
+      <button cmxExitStep="test">Exit</button>
+      <button cmxPreviousStep="test">Previous</button>
+      <button cmxNextStep="test">Next</button>
+      <button cmxLastStep="test">Finish</button>
     </div>
   </cemex-action-footer>
 
